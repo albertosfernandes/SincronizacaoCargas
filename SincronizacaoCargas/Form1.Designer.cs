@@ -34,6 +34,9 @@
             this.configuraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbPricetab = new System.Windows.Forms.CheckBox();
+            this.cbSetorTxt = new System.Windows.Forms.CheckBox();
+            this.cbRec_ass = new System.Windows.Forms.CheckBox();
             this.cbCadTxt = new System.Windows.Forms.CheckBox();
             this.cbDepto = new System.Windows.Forms.CheckBox();
             this.cbTxtinfo = new System.Windows.Forms.CheckBox();
@@ -44,8 +47,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.cbRec_ass = new System.Windows.Forms.CheckBox();
-            this.cbSetorTxt = new System.Windows.Forms.CheckBox();
+            this.cbProdutos = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +59,7 @@
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(345, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(422, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,18 +80,50 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox1.Controls.Add(this.cbProdutos);
+            this.groupBox1.Controls.Add(this.cbPricetab);
             this.groupBox1.Controls.Add(this.cbSetorTxt);
             this.groupBox1.Controls.Add(this.cbRec_ass);
             this.groupBox1.Controls.Add(this.cbCadTxt);
             this.groupBox1.Controls.Add(this.cbDepto);
             this.groupBox1.Controls.Add(this.cbTxtinfo);
             this.groupBox1.Controls.Add(this.cbItensmgv);
-            this.groupBox1.Location = new System.Drawing.Point(12, 27);
+            this.groupBox1.Location = new System.Drawing.Point(17, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(321, 199);
+            this.groupBox1.Size = new System.Drawing.Size(389, 199);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Arquivos";
+            // 
+            // cbPricetab
+            // 
+            this.cbPricetab.AutoSize = true;
+            this.cbPricetab.Location = new System.Drawing.Point(263, 20);
+            this.cbPricetab.Name = "cbPricetab";
+            this.cbPricetab.Size = new System.Drawing.Size(78, 17);
+            this.cbPricetab.TabIndex = 6;
+            this.cbPricetab.Text = "pricetab.txt";
+            this.cbPricetab.UseVisualStyleBackColor = true;
+            // 
+            // cbSetorTxt
+            // 
+            this.cbSetorTxt.AutoSize = true;
+            this.cbSetorTxt.Location = new System.Drawing.Point(143, 69);
+            this.cbSetorTxt.Name = "cbSetorTxt";
+            this.cbSetorTxt.Size = new System.Drawing.Size(74, 17);
+            this.cbSetorTxt.TabIndex = 5;
+            this.cbSetorTxt.Text = "setortxt.txt";
+            this.cbSetorTxt.UseVisualStyleBackColor = true;
+            // 
+            // cbRec_ass
+            // 
+            this.cbRec_ass.AutoSize = true;
+            this.cbRec_ass.Location = new System.Drawing.Point(143, 44);
+            this.cbRec_ass.Name = "cbRec_ass";
+            this.cbRec_ass.Size = new System.Drawing.Size(77, 17);
+            this.cbRec_ass.TabIndex = 4;
+            this.cbRec_ass.Text = "rec_ass.txt";
+            this.cbRec_ass.UseVisualStyleBackColor = true;
             // 
             // cbCadTxt
             // 
@@ -137,7 +171,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(9, 291);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(324, 35);
+            this.button1.Size = new System.Drawing.Size(397, 51);
             this.button1.TabIndex = 2;
             this.button1.Text = "Atualizar arquivo(s)";
             this.button1.UseVisualStyleBackColor = true;
@@ -176,34 +210,24 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(9, 240);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(324, 23);
+            this.progressBar1.Size = new System.Drawing.Size(397, 23);
             this.progressBar1.TabIndex = 5;
             // 
-            // cbRec_ass
+            // cbProdutos
             // 
-            this.cbRec_ass.AutoSize = true;
-            this.cbRec_ass.Location = new System.Drawing.Point(143, 44);
-            this.cbRec_ass.Name = "cbRec_ass";
-            this.cbRec_ass.Size = new System.Drawing.Size(77, 17);
-            this.cbRec_ass.TabIndex = 4;
-            this.cbRec_ass.Text = "rec_ass.txt";
-            this.cbRec_ass.UseVisualStyleBackColor = true;
-            // 
-            // cbSetorTxt
-            // 
-            this.cbSetorTxt.AutoSize = true;
-            this.cbSetorTxt.Location = new System.Drawing.Point(143, 69);
-            this.cbSetorTxt.Name = "cbSetorTxt";
-            this.cbSetorTxt.Size = new System.Drawing.Size(74, 17);
-            this.cbSetorTxt.TabIndex = 5;
-            this.cbSetorTxt.Text = "setortxt.txt";
-            this.cbSetorTxt.UseVisualStyleBackColor = true;
+            this.cbProdutos.AutoSize = true;
+            this.cbProdutos.Location = new System.Drawing.Point(263, 44);
+            this.cbProdutos.Name = "cbProdutos";
+            this.cbProdutos.Size = new System.Drawing.Size(81, 17);
+            this.cbProdutos.TabIndex = 7;
+            this.cbProdutos.Text = "produtos.txt";
+            this.cbProdutos.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 338);
+            this.ClientSize = new System.Drawing.Size(422, 354);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -243,6 +267,8 @@
         private System.Windows.Forms.CheckBox cbCadTxt;
         private System.Windows.Forms.CheckBox cbSetorTxt;
         private System.Windows.Forms.CheckBox cbRec_ass;
+        private System.Windows.Forms.CheckBox cbPricetab;
+        private System.Windows.Forms.CheckBox cbProdutos;
     }
 }
 

@@ -57,7 +57,17 @@ namespace SincronizacaoCargas
             if (cbRec_ass.Checked)
             {
                 baixarArquivos("REC_ASS.TXT");
-            }            
+            }
+
+            if (cbPricetab.Checked)
+            {
+                baixarArquivos("PRICETAB.TXT");
+            }
+
+            if (cbProdutos.Checked)
+            {
+                baixarArquivos("PRODUTOS.TXT");
+            }
         }
 
         private void baixarArquivos(string v)

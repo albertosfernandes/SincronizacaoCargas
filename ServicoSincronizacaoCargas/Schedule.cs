@@ -79,6 +79,16 @@ namespace ServicoSincronizacaoCargas
                 {
                     listSettings.Add("rec_ass.txt");
                 }
+
+                if (Properties.Settings.Default.PRICETAB)
+                {
+                    listSettings.Add("pricetab.txt");
+                }
+
+                if (Properties.Settings.Default.PRODUTOS_TXT)
+                {
+                    listSettings.Add("produtos.txt");
+                }
             }
             catch(Exception erro)
             { throw erro; }

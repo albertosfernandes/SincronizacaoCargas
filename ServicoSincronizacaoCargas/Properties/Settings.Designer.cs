@@ -25,7 +25,7 @@ namespace ServicoSincronizacaoCargas.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://bg.celtaware.com.br:10005/cargaloja02/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://")]
         public string UrlDownload {
             get {
                 return ((string)(this["UrlDownload"]));
@@ -152,6 +152,30 @@ namespace ServicoSincronizacaoCargas.Properties {
             }
             set {
                 this["REC_ASS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool PRICETAB {
+            get {
+                return ((bool)(this["PRICETAB"]));
+            }
+            set {
+                this["PRICETAB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool PRODUTOS_TXT {
+            get {
+                return ((bool)(this["PRODUTOS_TXT"]));
+            }
+            set {
+                this["PRODUTOS_TXT"] = value;
             }
         }
     }

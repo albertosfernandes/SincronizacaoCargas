@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="UrlDownload" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://bg.celtaware.com.br:10005/cargaloja02/</Value>
+      <Value Profile="(Default)">http://</Value>
     </Setting>
     <Setting Name="Destino" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Vol1\OutrasCargas\Toledo</Value>
@@ -33,6 +33,12 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="REC_ASS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PRICETAB" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PRODUTOS_TXT" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
